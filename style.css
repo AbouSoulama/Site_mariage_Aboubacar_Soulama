@@ -45,7 +45,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: aliceblue;
+    color:black;
     text-decoration: none;
 }
 .head h1{
@@ -55,7 +55,7 @@ nav ul li a:hover{
     color: rgb(255, 21, 21);
     padding-left: 15%;
     padding-right: 15%;
-padding-top: 5%;
+padding-top: 3%;
 }
 marquee {
     margin-left: 5%;
@@ -474,6 +474,199 @@ padding-right: 10%;
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
+}
+
+
+
+
+/* pages robes */
+.ic{
+    display: flex;
+    justify-content: right;
+  
+}
+.ic img{
+   width: 150px;
+   height: 35px; 
+   margin: 0% 1.1%;
+
+}
+
+.sect_6 .ic2{
+    display: flex;
+    justify-content: center;
+}
+.ic2 img{
+    margin: 5% 5%;
+}
+.sect_6 h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(248, 86, 11);
+    padding: 2% 0%;
+}
+.sect_6 .rob img{
+    width: 200px;
+    height: 150px;
+    border: 5px solid rgba(255, 248, 248, 0.61);
+    border-radius: 10px;
+}
+.sect_6 .rob{
+    display: flex;
+    justify-content: center;
+    margin: 2% 10%;
+    flex-wrap: wrap;
+    
+}
+.irob{
+    overflow: hidden;
+    width: 200px;
+    height: 150px;
+    /* border: 5px solid rgba(128, 128, 128, 0.61);
+    border-radius: 10px; */
+    
+}
+
+.sect_6 .rob img:hover{
+    overflow: hidden;
+    transform: scale(2.5);
+    transition: 5s;
+    
+
+}
+
+.sect_6 h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(248, 86, 11);
+    padding: 2% 0%;
+}
+
+.sect_6 .bouti{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.sect_6 .bouti img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    border: 4px solid rgba(95, 158, 160, 0.61);
+}
+.bou{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    /* border: 4px solid rgba(95, 158, 160, 0.61); */
+}
+
+.sect_6 .bouti img:hover{
+    overflow: hidden;
+    transform: scale(2.5);
+    transition: 5s;
+}
+
+.sect_6 .butt2 button{
+    width: 135px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 10%;
+}
+.sect_6 .butt2 button:hover{
+    background: rgb(255, 187, 0);
+    color: white;
+}
+
+.sect_6 .butt2 a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.sect_6 .butt2 a:hover{
+    color: white;
+}
+
+/* section 7 */
+.sect_7{
+    background: rgba(112, 112, 107, 0.438);
+    padding-bottom: 10%;
+}
+.sect_7 .ic3{
+    display: flex;
+    justify-content: center;
+}
+.sect_7 .ic3 img{
+    width: 150px;
+    height: 100px;
+    margin: 5% 2%;
+    border-radius: 10px;
+}
+.sect_7 h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(248, 86, 11);
+    padding: 2% 0%;
+}
+
+.sect_7 .disp{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.sect_7 .dis1 img{
+    width: 200px;
+    height: 300px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+.sect_7 .dis2 img{
+    width: 220px;
+    height: 200px;
+    margin: 1.1%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+.sect_7 p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: #2b2a28;
+    padding-top: 2%;
+}
+
+.sect_7 .butt3 button{
+    width: 135px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 1.1% 28%;
+    background: rgb(255, 136, 0);
+}
+.sect_7 .butt3 button:hover{
+    background: white;
+    color: black;
+}
+
+.sect_7 .butt3 a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.sect_7 .butt3 a:hover{
+    color: black;
+}
+.sect_7 .log{
+    display: flex;
+    justify-content: center;
+}
+.sect_7 .log img{
+    width: 150px;
+    height: 80px;
+    border-radius: 15px;
+    margin: 5% 1.1%;
 }
 
 
