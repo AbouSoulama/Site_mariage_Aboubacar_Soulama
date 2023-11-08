@@ -592,7 +592,7 @@ padding-right: 10%;
 /* section 7 */
 .sect_7{
     background: rgba(112, 112, 107, 0.438);
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
 }
 .sect_7 .ic3{
     display: flex;
@@ -667,6 +667,95 @@ padding-right: 10%;
     height: 80px;
     border-radius: 15px;
     margin: 5% 1.1%;
+    margin-bottom: 10%;
+}
+
+/* section 8 */
+
+.sect_8{
+    background: #ffc18f17;
+}
+.sect_8 .ic4{
+    display: flex;
+    justify-content: center;
+}
+.sect_8 .ic4 img{
+    width: 120px;
+    height: 90px;
+    margin: 5% 1.1%;
+    border-radius: 50px;
+}
+
+.sect_8 h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(248, 86, 11);
+    padding: 2% 0%;
+}
+
+.sect_8 .all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+}
+.sect_8 .al{
+    margin: 3% 1%;
+}
+.sect_8 .al img{
+    width: 200px;
+    height: 150px;
+    border: 4px solid rgb(192, 192, 192);
+    border-radius: 8px;
+
+}
+.sect_8 h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(248, 86, 11);
+    padding: 2% 0%;
+}
+
+.sect_8 .alll{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.sect_8 .alll img{
+    width: 250px;
+    height: 200px;
+    border: 4px solid rgba(192, 192, 192, 0.712);
+    border-radius: 50px;
+}
+.sect_8 h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #2b2a28;
+    margin: 0% 20%;
+}
+
+.sect_8 .butt4 button{
+    width: 200px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 2% 40%;
+    background: rgb(255, 136, 0);
+    margin-bottom: 10%;
+}
+.sect_8 .butt4 button:hover{
+    background: white;
+    color: black;
+}
+
+.sect_8 .butt4 a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.sect_8 .butt4 a:hover{
+    color: black;
 }
 
 
