@@ -878,12 +878,33 @@ padding-right: 10%;
 }
 .sect_9 .sep{
     margin: 0% 2%;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 }
 .sect_9 h3{
     background: white;
     text-align: center;
 }
+.sect_9 h4{
+    padding: 0% 7%;
+}
+
+.sect_9 button{
+    width: 150px;
+    height: 35px;
+    border: 2px solid rgb(192, 192, 192);
+    background: white;
+    margin: 2% 7%;
+}
+.sect_9  button a{
+    text-decoration: none;
+    color: #2b2a28;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sect_9 button:hover{
+    background: #a5a3a3;
+}
+
+
 
 /* footer */
 footer{
