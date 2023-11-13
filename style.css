@@ -1206,6 +1206,41 @@ font-family: Lato;
     text-decoration: none;
 }
 
+/* connexion */
+
+.ne label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 2%;
+}
+.ne input{
+    width: 300px;
+    border: none;
+    border-bottom: 3px solid black; 
+}
+
+.nom{
+    margin: 0% 2%;
+    font-family: Lato;
+    font-size: 1.2rem;
+    color: rgb(48, 41, 41);
+    /* margin-left: 5%; */
+}
+.dec button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    background: rgba(255, 0, 0, 0.582);
+    border-radius: 50px;
+}
+.dec button a{
+    text-decoration: none;
+    color: white;
+}
+.dec button:hover{
+    background: red;
+}
+
 /* footer */
 footer{
     background: gainsboro;

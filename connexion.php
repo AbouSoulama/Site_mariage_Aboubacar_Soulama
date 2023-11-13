@@ -23,7 +23,7 @@
             <span style="color: rgb(252, 137, 117);font-size: 1.1rem;font-family: crossorigin;">Service  Mariage</span>
         </div>
         <div>
-            <button class="b3"><a href="connection.php">Se connecté</a></button>
+            <button class="b3"><a href="inscription.php">S'enregistré</a></button>
             <button class="b4"><a href="index.php">Retour</a></button>
 
         </div>
@@ -33,30 +33,21 @@
   <!-- <h1>Fomulaire d'enregistrement</h1> -->
     <div class="form">
 
-        <form action="">
-            <div class="np">
+        <form action="traitement2.php" method="post">
+        <div class="ne">
             <div>
-                <label for="">Nom</label><br>
-                <input type="text" name="nom" id="Nom" placeholder="Entré votre nom">
+                <label for="">Email ou nom utilisateur</label><br>
+                <input type="text" name="nom" id="Nom" placeholder="Entré votre email ou nom utilisateur">
             </div>
             <div>
-                <label for="" class="in">Prénom</label><br>
-                <input type="text" name="prenom" id="Prenom" placeholder="Entré votre prenom" class="in">
+                <label for="" class="in">Mot de passe</label><br>
+                <input type="password" name="mot_de_passe" id="Passe" placeholder="Entré votre mot de passe" class="in">
             </div>
         </div>
 
 
         <div class="suit">
-
-            <label for="">Email</label><br>
-            <input type="email" name="email" id="Email" placeholder="Entré un l'email"><br>
-            <label for="">Mot de passe</label><br>
-            <input type="password" name="passe" id="Passe" placeholder="Entré un mot de passe"><br>
-            <label for="">Nom utilisateur</label><br>
-            <input type="text" name="utilisateur" id="Utilisateur" placeholder="Entré un nom utilisateur"><br>
-            <label for="">Tel</label><br>
-            <input type="tel" name="numero" id="Numero" placeholder="Entré un numero de téléphone"><br>
-            <button type="submit">Enregistré</button>
+            <button type="submit">Connexion</button>
 
 
         </div>

@@ -1,3 +1,16 @@
+<?php
+session_start();
+try
+{
+$bdd = new PDO('mysql:host=localhost;dbname=site_mariage', 'root', '');
+}
+catch(Exception $e)
+{
+die('Erreur : '.$e->getMessage());
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +20,14 @@
     <link rel="shortcut icon" href="images/duran-kirsten-wedding-website.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="carousel.rtl.css">
     <link rel="shortcut icon" href="images/609544.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
 </head>
 <body>
 
@@ -16,14 +35,37 @@
         <nav>
         <ul>
         
-            <img src="images/téléchargement (4).png" alt="" style="margin-top: -2.5%; height: 100px;border-radius: 50px; margin-right: 20%;">
+            <img src="images/téléchargement (4).png" alt="" style="margin-top: -2.5%; height: 100px;border-radius: 50px; margin-right: 2%;">
             <li><a href="accueil.php">Accueil</a></li>
             <!-- <li><a href="#">Coordination</a></li> -->
             <!-- <li><a href="#">Portfolio</a></li> -->
             <li><a href="#">Service</a></li>
             <li><a href="#">A propos</a></li>
             <li><a href="#">Contact</a></li>
-            <img src="images/téléchargement (4).jpg" alt="" style="margin-top: -2.5%; height: 100px;margin-left: 20%;border-radius: 50px;">
+            
+            
+    
+    <div class="nom">
+    <?php
+    if ($_SESSION['nom']) {
+      echo $_SESSION['nom'];
+    }?>
+    
+    </div>
+    
+    
+     
+    <div class="dec" style=>
+    <?php
+    if ($_SESSION['nom']) {
+    echo '<button><a href="index.php">Déconnexion</a></button>';
+    } ?>
+    </div>
+    
+            
+            
+            
+            <img src="images/téléchargement (4).jpg" alt="" style="margin-top: -2.5%; height: 100px;margin-left: 2%;border-radius: 50px;">
         
         </ul>
    </nav>
@@ -168,9 +210,61 @@
         <section class="sect_5" style="background-image: linear-gradient(rgba(10,10,10,0.5),rgba(20, 20, 20, 0.068),rgba(30,30,30,0.5));">
            <h1>Témoignages</h1>
            <div>
-           <div class="pro"><img src="images/64228f3e50a1d9bb4bd40b9d_tiffany-r-tiffany-l-1000x1000-p-500.jpg" alt="" style="height: 100px;width: 100px;border-radius: 50%;" alt=""></div>
+           
+           
+           <main>
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+        
+          <div class="carousel-caption text-start">
+          <div class="pro"><img src="images/64228f3e50a1d9bb4bd40b9d_tiffany-r-tiffany-l-1000x1000-p-500.jpg" alt="" style="height: 100px;width: 100px;border-radius: 50%;" alt=""></div>
+          <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique temporibus mollitia, nam eligendi accusantium saepe delectus ex perspiciatis totam nulla iure qui unde possimus facere expedita ea, vitae consequatur?<p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </main>
+
+           <!-- <div class="pro"><img src="images/64228f3e50a1d9bb4bd40b9d_tiffany-r-tiffany-l-1000x1000-p-500.jpg" alt="" style="height: 100px;width: 100px;border-radius: 50%;" alt=""></div>
           <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique temporibus mollitia, nam eligendi accusantium saepe delectus ex perspiciatis totam nulla iure qui unde possimus facere expedita ea, vitae consequatur?<p>
-          <div class="button"><button><a href="">New</a></button></div>
+          <div class="button"><button><a href="">New</a></button></div> -->
            </div>
 
            </section>
@@ -253,20 +347,13 @@
     
     
     
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 
-<!-- <i class="fa-regular fa-star"></i> -->
-     <!-- <i class="fa-solid fa-star"></i> -->
-     <!-- <i class="fa-solid fa-mobile"></i> -->
-      <!-- <i class="fa-brands fa-instagram"></i> -->
-     <!-- <i class="fa-brands fa-instagram"></i> -->
-     <!-- <i class="fa-brands fa-cc-visa"></i> -->
-     <!-- <i class="fa-brands fa-apple"></i> -->
 
 
 
@@ -277,4 +364,3 @@
 
 
 
-    

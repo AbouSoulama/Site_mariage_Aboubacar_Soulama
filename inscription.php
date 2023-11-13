@@ -23,7 +23,7 @@
             <span style="color: rgb(252, 137, 117);font-size: 1.1rem;font-family: crossorigin;">Service  Mariage</span>
         </div>
         <div>
-            <button class="b3"><a href="connection.php">Se connecté</a></button>
+            <button class="b3"><a href="connexion.php">Se connecté</a></button>
             <button class="b4"><a href="index.php">Retour</a></button>
 
         </div>
@@ -33,7 +33,7 @@
   <!-- <h1>Fomulaire d'enregistrement</h1> -->
     <div class="form">
 
-        <form action="">
+        <form action="traitement.php" method="post">
             <div class="np">
             <div>
                 <label for="">Nom</label><br>

@@ -1,3 +1,17 @@
+<?php
+session_start();
+try
+{
+$bdd = new PDO('mysql:host=localhost;dbname=site_mariage', 'root', '');
+}
+catch(Exception $e)
+{
+die('Erreur : '.$e->getMessage());
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +30,38 @@
         <nav>
         <ul>
         
-            <img src="images/téléchargement (4).png" alt="" style="margin-top: -2.5%; height: 100px;border-radius: 50px;margin-right: 20%;">
+        <img src="images/téléchargement (4).png" alt="" style="margin-top: -2.5%; height: 100px;border-radius: 50px; margin-right: 2%;">
             <li><a href="accueil.php">Accueil</a></li>
             <!-- <li><a href="#">Coordination</a></li> -->
             <!-- <li><a href="#">Portfolio</a></li> -->
             <li><a href="#">Service</a></li>
             <li><a href="#">A propos</a></li>
             <li><a href="#">Contact</a></li>
-            <img src="images/téléchargement (4).jpg" alt="" style="margin-top: -2.5%; height: 100px;margin-left: 20%;border-radius: 50px;">
+            
+            
+    
+    <div class="nom">
+    <?php
+    if ($_SESSION['nom']) {
+      echo $_SESSION['nom'];
+    }?>
+    
+    </div>
+    
+    
+     
+    <div class="dec" style=>
+    <?php
+    if ($_SESSION['nom']) {
+    echo '<button><a href="index.php">Déconnexion</a></button>';
+    } ?>
+    </div>
+    
+            
+            
+            
+            <img src="images/téléchargement (4).jpg" alt="" style="margin-top: -2.5%; height: 100px;margin-left: 2%;border-radius: 50px;">
+        
         
         </ul>
    </nav>
