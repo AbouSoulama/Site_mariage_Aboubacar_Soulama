@@ -207,14 +207,11 @@ die('Erreur : '.$e->getMessage());
      </section>
      
      <section style="background:#ffc18f17;margin-top: -5%;">
-        <section class="sect_5" style="background-image: linear-gradient(rgba(10,10,10,0.5),rgba(20, 20, 20, 0.068),rgba(30,30,30,0.5));">
-           <h1>Témoignages</h1>
-           <div>
-           
-           
-           <main>
+        <section class="sect_5">
+    
+    <h1>Témoignages</h1>
 
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light"  style="margin: 0% 13%;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -228,6 +225,7 @@ die('Erreur : '.$e->getMessage());
           <div class="carousel-caption text-start">
           <div class="pro"><img src="images/64228f3e50a1d9bb4bd40b9d_tiffany-r-tiffany-l-1000x1000-p-500.jpg" alt="" style="height: 100px;width: 100px;border-radius: 50%;" alt=""></div>
           <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique temporibus mollitia, nam eligendi accusantium saepe delectus ex perspiciatis totam nulla iure qui unde possimus facere expedita ea, vitae consequatur?<p>
+          <p><a class="btn btn-lg btn-primary" href="#">commenter</a></p>
           </div>
         </div>
       </div>
@@ -260,12 +258,8 @@ die('Erreur : '.$e->getMessage());
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  </main>
 
-           <!-- <div class="pro"><img src="images/64228f3e50a1d9bb4bd40b9d_tiffany-r-tiffany-l-1000x1000-p-500.jpg" alt="" style="height: 100px;width: 100px;border-radius: 50%;" alt=""></div>
-          <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique temporibus mollitia, nam eligendi accusantium saepe delectus ex perspiciatis totam nulla iure qui unde possimus facere expedita ea, vitae consequatur?<p>
-          <div class="button"><button><a href="">New</a></button></div> -->
-           </div>
+
 
            </section>
         
@@ -280,8 +274,6 @@ die('Erreur : '.$e->getMessage());
 
            </section>
            
-            
-           
            <section class="sect_1">
             <div class="ic0">
             <img src="images/nike.webp" alt="">
@@ -290,6 +282,7 @@ die('Erreur : '.$e->getMessage());
             <img src="images/sony.webp" alt="">
             <img src="images/samsung.webp" alt="">
             </div>
+            </section>
      
      
 

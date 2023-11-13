@@ -463,16 +463,18 @@ padding-right: 10%;
 
 /* section 5 */
 .sect_5{
-    background-image: linear-gradient(rgba(10, 10, 10, 0.76),rgba(15, 15, 15, 0.315),rgba(10, 10, 10, 0.671));
+    /* background-image: linear-gradient(rgba(10, 10, 10, 0.76),rgba(15, 15, 15, 0.315),rgba(10, 10, 10, 0.671)); */
     margin: 5% 10%;
     border-radius: 10px;
+    
 }
 .sect_5 h1{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
-    padding: 5% 10%;
-    color: aliceblue;
+    padding: 0% 10%;
+    padding-top: 10%;
+    color: rgb(18, 120, 209);
 }
 .sect_5 .pro{
     display: flex;
@@ -487,19 +489,14 @@ padding-right: 10%;
 }
 
 .sect_5  button{
-    width: 150px;
-    height: 35px;
-    border: 2px solid rgb(192, 192, 192);
-    background: white;
+   background: #0c0b0b7a;
+   border: none;
+   color: white;
 }
 
-.sect_5 button a{
-    text-decoration: none;
-    color: #2b2a28;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 .sect_5 button:hover{
-    background: #a5a3a3;
+    background: #0a0a0a;
 }
 .button{
     display: flex;
@@ -508,7 +505,8 @@ padding-right: 10%;
 }
 
 .comment{
-    margin: 0% 10%;
+    margin: 0% 27%;
+    margin-top: 10ù;
 }
 .comment h6{
    font-size: Lato;
